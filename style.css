@@ -44,6 +44,11 @@ body {
   background: var(--bg-url) no-repeat top center/cover;
   background-attachment: fixed; /* Mantém o fundo fixo ao rolar */
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza tudo verticalmente */
+  align-items: center; /* Centraliza tudo horizontalmente */
+  overflow: hidden; /* Trava a rolagem e o zoom elástico */
 }
 
 body * {
@@ -145,7 +150,7 @@ ul li a:hover {
 
 /* Rodapé */
 footer {
-  padding: 35px 0;
+  padding: 15px 0;
   text-align: center;
   font-size: 14px;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
